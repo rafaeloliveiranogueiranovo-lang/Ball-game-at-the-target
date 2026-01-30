@@ -1,0 +1,55 @@
+Action: file_editor create /app/game.html --file-text "<!DOCTYPE html>
+<html lang=\"pt-BR\">
+<head>
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>Jogo de Precisão - 1000 Fases</title>
+    <link rel=\"stylesheet\" href=\"game.css\">
+</head>
+<body>
+    <div class=\"game-container\">
+        <div class=\"info-panel\">
+            <div class=\"info-item\">
+                <span class=\"info-label\">Pontuação:</span>
+                <span class=\"info-value\" id=\"scoreText\">0</span>
+            </div>
+            <div class=\"info-item\">
+                <span class=\"info-label\">Recorde:</span>
+                <span class=\"info-value\" id=\"recordText\">0</span>
+            </div>
+            <div class=\"info-item\">
+                <span class=\"info-label\">Fase:</span>
+                <span class=\"info-value\" id=\"phaseText\">1</span>
+            </div>
+            <div class=\"info-item\">
+                <span class=\"info-label\">Skin:</span>
+                <span class=\"info-value\" id=\"skinText\">Padrão</span>
+            </div>
+        </div>
+        
+        <canvas id=\"gameCanvas\"></canvas>
+        
+        <div class=\"console-container\">
+            <div class=\"console-header\">Console</div>
+            <div id=\"debugConsole\" class=\"console-content\"></div>
+        </div>
+        
+        <div id=\"skinUnlockMessage\" class=\"skin-unlock-message hidden\">
+            <div class=\"unlock-content\">
+                <div class=\"unlock-title\">🎉 Nova Skin Desbloqueada!</div>
+                <div class=\"unlock-description\"></div>
+            </div>
+        </div>
+        
+        <div id=\"creditsScreen\" class=\"credits-screen hidden\">
+            <div class=\"credits-content\">
+                <div class=\"credits-line\"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src=\"game.js\" defer></script>
+</body>
+</html>
+"
+Observation: Create successful: /app/game.html
