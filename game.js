@@ -1,5 +1,4 @@
-
-Action: file_editor str_replace /app/game.js --old-str "// Carregar dados do localStorage
+// Carregar dados do localStorage
 function loadGameData() {
     try {
         const savedRecord = localStorage.getItem('gameRecord');
